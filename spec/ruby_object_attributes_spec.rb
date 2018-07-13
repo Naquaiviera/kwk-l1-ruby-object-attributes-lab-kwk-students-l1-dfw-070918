@@ -1,4 +1,22 @@
-require 'spec_helper'
+# dog.rb
+ attr_reader :name, :breed, :age, :color, :trained 
+ attr_writer :age, :trained
+  def initialize(name, breed, age, color, trained)
+   @name = name 
+   @breed = breed
+   @age = age
+   @coloe = color
+   @trained = trained
+ end 
+end
+  
+
+vlad = Dog.new("Bowie", "Mini Poodie", "Amost 3", "Oreo", "Yes")
+sara = Dog.new("Copper", "Aussie", "7", "Black", 'Yes')
+puts sara.trained
+puts sara.trained = "No"
+ 
+class 'spec_helper'
 
 describe 'Dog' do
   it 'is defined within lib/dog.rb' do
